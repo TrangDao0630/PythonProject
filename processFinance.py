@@ -1,15 +1,5 @@
 import os
 import pandas as pd
-
-#write a process file function to read in activity-2.csv and remove the account
-# number column negate the amount
-# put the result in test.csv
-# def process_activitycsv(activitycsv , test.csv):
-#     # print("Processing file: %s " % test.csv)
-#     data = pd.read_csv(activitycsv)
-#     data = data.drop(columns ={'Account #'})
-#     data['amount'] = -data['amount']
-#     data.to.csv(test.csv, index = False)
     
 def process_file(data, filename):
     # Add your processing logic here
