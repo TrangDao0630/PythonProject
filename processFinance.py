@@ -3,14 +3,11 @@ import os
 import pandas as pd
     
 def process_file(data, filename):
-    # Add your processing logic here
     print("Processing file: " ,  filename)
         # Process BOA data
-    if 'stmt' in filename:
-         # Read the file, skipping lines with parsing errors
-        # Drop summary lines if they were not correctly skipped        # Rename columns to match transaction data format
+    if 'stmt' in filename:  
+        # Rename columns to match transaction data format
         data = data.rename(columns={'Running Bal.': 'Running Bal.'})
-        # Apply processing logic as needed
         data['Category'] = data['Description'].apply(lambda x: getCategoryFromDescription(x))
     # For example, you can check the filename and apply different processing
     elif 'activity' in filename:
