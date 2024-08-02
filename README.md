@@ -1,4 +1,4 @@
-# Financial Data Processing Script
+# Financial Data Processing
 
 - process and categorize financial transaction data from various sources (e.g., Bank of America, American Express, Chase).
 - clean data into organized categories and automatically detect category labels using pandas
